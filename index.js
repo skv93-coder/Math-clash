@@ -51,6 +51,9 @@ class Game {
         if (this.grid[row][cell].isSelected) {
           cellDiv.classList.add("selected");
         }
+        if (this.grid[row][cell].isRendered) {
+          cellDiv.classList.add("render-box");
+        }
         cellDiv.classList.add("box");
 
         rowDiv.appendChild(cellDiv);
