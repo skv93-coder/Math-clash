@@ -10,12 +10,18 @@ body {
   height: 100vh;
   width: 100vw;
   display: flex;
+  background: url("https://png.pngtree.com/thumb_back/fw800/background/20201026/pngtree-futuristic-shape-abstract-background-chemistry-technology-concept-for-website-image_438818.jpg")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .game-box {
   margin: auto;
   height: 80%;
-  width: 40%;
-  background-color: rgb(206 209 212);
+  width: 26%;
+  background-color: #6263bb;
 }
 .screen-board {
   margin-left: auto;
@@ -23,7 +29,7 @@ body {
   margin-top: 4%;
   height: 25%;
   width: 90%;
-  background-color: rgb(223 213 123);
+  background-color: #6263bb;
   border-radius: 16px;
   border: 4px solid rgb(160, 139, 139);
   display: flex;
@@ -35,13 +41,13 @@ body {
 .box {
   font-size: xx-large;
   color: white;
-  border: 4px solid white;
+  border: 4px solid black;
   border-radius: 16px;
   padding: 2.5%;
 }
 .grid-box {
   height: 63%;
-  background-color: rgb(65 19 109);
+  background-color: #252632;
   margin: 4%;
   overflow: auto;
 }
@@ -51,10 +57,16 @@ body {
 }
 .box {
   flex: 1;
+  background-color: #565656;
+}
+
+.render-box {
+  background-color: white;
+  color: black;
 }
 .selected {
-  color: rgb(65 19 109);
-  background-color: white;
+  color: black;
+  background-color: rgb(86, 203, 213);
 }
 .start-btn {
   padding: 24px 68px;
@@ -96,4 +108,8 @@ body {
   padding: 3% 5%;
   font-size: x-large;
   cursor: pointer;
+}
+#target {
+  background-color: #ecd737;
+  /* border: 0; */
 }
