@@ -151,6 +151,9 @@ class Tile {
   }
   render() {
     document.getElementById(this.id).innerText = this.txt;
+    if (!this.isRendered) {
+      document.getElementById(this.id).classList.remove("render-box");
+    }
   }
 }
 let intervalId = null;
