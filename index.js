@@ -158,6 +158,7 @@ class Tile {
 }
 let intervalId = null;
 const start = () => {
+  document.getElementsByClassName("game-box")[0].style.height = "auto";
   if (intervalId) {
     clearInterval(intervalId);
   }
