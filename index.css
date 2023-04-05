@@ -113,3 +113,11 @@ body {
   background-color: #ecd737;
   /* border: 0; */
 }
+@media screen {
+}
+@media only screen and (max-width: 600px) {
+  .broad-text,
+  .box {
+    font-size: x-large;
+  }
+}
