@@ -22,7 +22,7 @@ body {
   height: auto;
   /* min-height: 350px; */
   width: auto;
-  background-color: #6263bb;
+  background-color: #026742;
 }
 .screen-board {
   margin-left: auto;
@@ -30,7 +30,7 @@ body {
   margin-top: 4%;
   height: 25%;
   width: 90%;
-  background-color: #6263bb;
+  background-color: #026742;
   border-radius: 16px;
   display: flex;
   justify-content: space-between;
