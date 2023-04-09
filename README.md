@@ -23,4 +23,4 @@ This game is currently in development and is not yet ready for release. The foll
 
 ## Future Plans
 
-One of the upcoming features we plan to add to this game is an introduction section that will welcome users to the game and provide a brief overview of the gameplay. We also plan to include detailed instructions on how to play the game, so users can quickly understand the rules and objectives. This will help new players get started quickly and enjoy the game right away. We are excited to continue developing this feature and making the game more accessible to everyone.
+One of the upcoming features i plan to add to this game is an introduction section that will welcome users to the game and provide a brief overview of the gameplay. I also plan to include detailed instructions on how to play the game, so users can quickly understand the rules and objectives. This will help new players get started quickly and enjoy the game right away. I am excited to continue developing this feature and making the game more accessible to everyone.
