@@ -136,6 +136,9 @@ class Tile {
     if (!this.isRendered) {
       return;
     }
+    if (this.txt !== "0") {
+      document.getElementsByTagName("audio")[0].play();
+    }
     this.isSelected = !this.isSelected;
     if (this.isSelected) {
       score.addToCurr(this.txt);
@@ -168,12 +171,13 @@ const start = () => {
   document.getElementsByClassName("game-box")[0].style.height = "auto";
   const audio = document.createElement("audio");
 
-  audio.autoplay = true;
+  // audio.autoplay = true;
   const src = document.createElement("source");
   src.type = "audio/mp3";
-  audio.loop = true;
-  src.src =
-    "https://s3.amazonaws.com/pb_previews/532_dynamic-upbeat-logo/532_full_dynamic-upbeat-logo_0012_preview.mp3";
+  // audio.loop = true;
+  src.src = "./button-3.mp3";
+  // src.src =
+  //   "https://s3.amazonaws.com/pb_previews/532_dynamic-upbeat-logo/532_full_dynamic-upbeat-logo_0012_preview.mp3";
   audio.appendChild(src);
   document.getElementsByTagName("body")[0].appendChild(audio);
   if (intervalId) {
