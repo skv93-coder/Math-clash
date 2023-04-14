@@ -1,3 +1,4 @@
+const convertDoubleDigit = (digit) => (digit < 10 ? `0${digit}` : digit);
 class Game {
   constructor() {
     this.size = 30;
@@ -112,11 +113,15 @@ class ScoreBoard {
   }
   render() {
     console.log("200", 2000);
-    document.getElementById("target").innerText = `Target: ${this.target}`;
-    document.getElementById("score").innerText = `Score: ${this.score}`;
-    document.getElementById("curr").innerText = `Current: ${
-      this.curr < 10 ? "0" + this.curr : this.curr
-    }`;
+    document.getElementById("target").innerText = `Target: ${convertDoubleDigit(
+      this.target
+    )}`;
+    document.getElementById("score").innerText = `Score: ${convertDoubleDigit(
+      this.score
+    )}`;
+    document.getElementById("curr").innerText = `Current: ${convertDoubleDigit(
+      this.curr
+    )}`;
   }
 }
 let score = null;
