@@ -114,7 +114,9 @@ class ScoreBoard {
     console.log("200", 2000);
     document.getElementById("target").innerText = `Target: ${this.target}`;
     document.getElementById("score").innerText = `Score: ${this.score}`;
-    document.getElementById("curr").innerText = `Current: ${this.curr}`;
+    document.getElementById("curr").innerText = `Current: ${
+      this.curr < 10 ? "0" + this.curr : this.curr
+    }`;
   }
 }
 let score = null;
@@ -159,6 +161,16 @@ class Tile {
 let intervalId = null;
 const start = () => {
   document.getElementsByClassName("game-box")[0].style.height = "auto";
+  const audio = document.createElement("audio");
+
+  audio.autoplay = true;
+  const src = document.createElement("source");
+  src.type = "audio/mp3";
+  audio.loop = true;
+  src.src =
+    "https://s3.amazonaws.com/pb_previews/532_dynamic-upbeat-logo/532_full_dynamic-upbeat-logo_0012_preview.mp3";
+  audio.appendChild(src);
+  document.getElementsByTagName("body")[0].appendChild(audio);
   if (intervalId) {
     clearInterval(intervalId);
   }
