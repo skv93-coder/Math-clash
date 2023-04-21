@@ -175,7 +175,7 @@ const start = () => {
   const src = document.createElement("source");
   src.type = "audio/mp3";
   // audio.loop = true;
-  src.src = "./button-3.mp3";
+  src.src = "./audio.mp3";
   // src.src =
   //   "https://s3.amazonaws.com/pb_previews/532_dynamic-upbeat-logo/532_full_dynamic-upbeat-logo_0012_preview.mp3";
   audio.appendChild(src);
